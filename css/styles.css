@@ -27,11 +27,11 @@ body {
   color: var(--logo-black-color);
 }
 
-.studio {
+.logo-studio {
   color: var(--logo-black-color);
 }
 
-.studio:hover {
+.logo-studio:hover {
   color: var(--accent-color);
 }
 
