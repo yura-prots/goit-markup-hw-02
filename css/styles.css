@@ -1,12 +1,79 @@
-/* колір основного тексту - #212121 */
+:root {
+  --main-white-color: #ffffff;
+  --logo-black-color: #000000;
+  --accent-color: #2196f3;
+  --main-text-color: #757575;
+  --secondary-text-color: #212121;
+  --hero-bg-color: #2f303a;
+}
 
-/* колір другорядного тексту - #757575 */
+body {
+  background-color: var(--main-white-color);
+  color: var(--main-text-color);
+  font-family: 'Roboto', 'Raleway', sans-serif;
+}
 
-/* колір фону - #FFFFFF */
+/* Шапка */
+
+.logo {
+  color: var(--accent-color);
+  font-family: 'Raleway', sans-serif;
+}
+
+.studio {
+  color: var(--logo-black-color);
+}
+
+.list {
+  list-style: none;
+}
+
+.nav .link {
+  color: var(--secondary-text-color);
+}
+
+.nav .link:hover,
+.nav .link:focus {
+  color: var(--accent-color);
+}
+
+.info .link {
+  color: var(--secondary-text-color);
+}
+
+.info .link:hover,
+.info .link:focus {
+  color: var(--accent-color);
+}
+
+/* Герой */
+
+.hero {
+  background: var(--hero-bg-color);
+}
+
+.hero-title {
+  color: var(--main-white-color);
+}
+
+.hero-btn {
+  color: var(--main-white-color);
+  background: var(--accent-color);
+}
+
+/* Особливості */
+
+.section-title {
+  color: var(--secondary-text-color);
+}
+
+.list-title {
+  color: var(--secondary-text-color);
+}
+/* колір основного тексту - #757575 */
+
+/* колір другорядного тексту - #212121 */
 
 /* акцент - #2196F3 */
 
-body {
-  background-color: #ffffff;
-  color: #212121;
-}
+/* колір фону - #FFFFFF */
