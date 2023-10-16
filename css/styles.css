@@ -1,15 +1,17 @@
 :root {
-  --main-white-color: #ffffff;
+  --primary-white-color: #ffffff;
   --logo-black-color: #000000;
   --accent-color: #2196f3;
-  --main-text-color: #757575;
+  --primary-text-color: #757575;
   --secondary-text-color: #212121;
   --hero-bg-color: #2f303a;
+  --button-bg-color: #f5f4fa;
+  --address-text-color: rgba(255, 255, 255, 0.6);
 }
 
 body {
-  background-color: var(--main-white-color);
-  color: var(--main-text-color);
+  background-color: var(--primary-white-color);
+  color: var(--primary-text-color);
   font-family: 'Roboto', 'Raleway', sans-serif;
 }
 
@@ -20,8 +22,17 @@ body {
   font-family: 'Raleway', sans-serif;
 }
 
+.logo:hover,
+.logo:focus {
+  color: var(--logo-black-color);
+}
+
 .studio {
   color: var(--logo-black-color);
+}
+
+.studio:hover {
+  color: var(--accent-color);
 }
 
 .list {
@@ -30,6 +41,10 @@ body {
 
 .nav .link {
   color: var(--secondary-text-color);
+}
+
+.nav .link.current {
+  color: var(--accent-color);
 }
 
 .nav .link:hover,
@@ -49,31 +64,62 @@ body {
 /* Герой */
 
 .hero {
-  background: var(--hero-bg-color);
+  background-color: var(--hero-bg-color);
 }
 
 .hero-title {
-  color: var(--main-white-color);
+  color: var(--primary-white-color);
 }
 
 .hero-btn {
-  color: var(--main-white-color);
-  background: var(--accent-color);
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
 }
 
-/* Особливості */
+.hero-btn:hover {
+  color: var(--hero-bg-color);
+  cursor: pointer;
+}
+
+/* Секції */
 
 .section-title {
   color: var(--secondary-text-color);
 }
 
-.list-title {
+.card-title {
   color: var(--secondary-text-color);
 }
-/* колір основного тексту - #757575 */
 
-/* колір другорядного тексту - #212121 */
+/* Портфоліо */
 
-/* акцент - #2196F3 */
+.list-button {
+  color: var(--secondary-text-color);
+  background-color: var(--button-bg-color);
+  cursor: pointer;
+}
 
-/* колір фону - #FFFFFF */
+.list-button:hover,
+.list-button:focus {
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+}
+
+/* Підвал */
+
+.footer {
+  background-color: var(--hero-bg-color);
+}
+
+.address {
+  color: var(--primary-white-color);
+}
+
+.address .link {
+  color: var(--address-text-color);
+}
+
+.address .link:hover,
+.address .link:focus {
+  color: var(--accent-color);
+}
